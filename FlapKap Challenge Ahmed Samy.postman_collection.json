@@ -1,0 +1,531 @@
+{
+	"info": {
+		"_postman_id": "32e335d7-57df-40ef-b441-970f143a0438",
+		"name": "FlapKap Challenge Ahmed Samy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32422144"
+	},
+	"item": [
+		{
+			"name": "User Request",
+			"item": [
+				{
+					"name": "Signup User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"username\": \"test2222\",\r\n  \"email\": \"sononamexx@gmail.com\",\r\n  \"password\": \"Ahmedeltonamly2012\",\r\n  \"Cpassword\": \"Ahmedeltonamly2012\",\r\n  \"role\":\"seller\" // seller or buyer \r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ahmed-samy-flapkap-backend-challenge.onrender.com/users",
+							"protocol": "https",
+							"host": [
+								"ahmed-samy-flapkap-backend-challenge",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Signin User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"username\": \"test22\",\r\n  \"password\": \"Ahmedeltonamly2012\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ahmed-samy-flapkap-backend-challenge.onrender.com/users/signin",
+							"protocol": "https",
+							"host": [
+								"ahmed-samy-flapkap-backend-challenge",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"users",
+								"signin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change Password",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YmY5ZDdlZjkyY2YzMDg5NDE4NTNmNiIsImlhdCI6MTcwNzA1ODMyMywiZXhwIjoxNzA3MDYxOTIzfQ.k_HRGo0FGNoG0KDazRqVDENMJ_NvzjmmMsENFGSgOqQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"oldPassword\": \"Ahmedeltonamly2012\",\r\n    \"newPassword\": \"Ahmedeltonamly2020\",\r\n    \"CNewPassword\": \"Ahmedeltonamly2020\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ahmed-samy-flapkap-backend-challenge.onrender.com/users/changepassword",
+							"protocol": "https",
+							"host": [
+								"ahmed-samy-flapkap-backend-challenge",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"users",
+								"changepassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Forget Password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"771e6f01d4@emailaoa.pro\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ahmed-samy-flapkap-backend-challenge.onrender.com/users/forgetpassword",
+							"protocol": "https",
+							"host": [
+								"ahmed-samy-flapkap-backend-challenge",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"users",
+								"forgetpassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reset Password",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YjIxYTIzYmVmMjJmM2Q3NDM2MDBkZCIsImlhdCI6MTcwNjE3MTA3NCwiZXhwIjoxNzA2MTc0Njc0fQ.E9HqzHfjwss3dcxhKFbtlVL_fdmYG_OcZj1N6fAiGZc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"password\": \"Ahmedeltonamly@2012\",\r\n    \"CPassword\": \"Ahmedeltonamly@2012\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ahmed-samy-flapkap-backend-challenge.onrender.com/users/resetpassword/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YjIzMGY1ZjFiMjM5Y2YxODVjYjE2ZiIsImlhdCI6MTcwNjE3Njk3OSwiZXhwIjoxNzA2MTgwNTc5fQ.rz5QQIjeMwz142co1NJrwSebhMpbsj_WMSAdM_zZHRU",
+							"protocol": "https",
+							"host": [
+								"ahmed-samy-flapkap-backend-challenge",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"users",
+								"resetpassword",
+								"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YjIzMGY1ZjFiMjM5Y2YxODVjYjE2ZiIsImlhdCI6MTcwNjE3Njk3OSwiZXhwIjoxNzA2MTgwNTc5fQ.rz5QQIjeMwz142co1NJrwSebhMpbsj_WMSAdM_zZHRU"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YmY5ZDdlZjkyY2YzMDg5NDE4NTNmNiIsImlhdCI6MTcwNzA1ODMyMywiZXhwIjoxNzA3MDYxOTIzfQ.k_HRGo0FGNoG0KDazRqVDENMJ_NvzjmmMsENFGSgOqQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"username\": \"NewName\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ahmed-samy-flapkap-backend-challenge.onrender.com/users/changepassword",
+							"protocol": "https",
+							"host": [
+								"ahmed-samy-flapkap-backend-challenge",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"users",
+								"changepassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YmY5ZDdlZjkyY2YzMDg5NDE4NTNmNiIsImlhdCI6MTcwNzA1ODMyMywiZXhwIjoxNzA3MDYxOTIzfQ.k_HRGo0FGNoG0KDazRqVDENMJ_NvzjmmMsENFGSgOqQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ahmed-samy-flapkap-backend-challenge.onrender.com/users/",
+							"protocol": "https",
+							"host": [
+								"ahmed-samy-flapkap-backend-challenge",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"users",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deposit Coin",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YmZhOTBkNGEzNzY2OGI3YTYwMDhjNyIsImlhdCI6MTcwNzA2MTk1OCwiZXhwIjoxNzA3MDY1NTU4fQ.zIJDFLL6XJF8drobBZTD89ygbtPmGv6HYHbRbvizH6Q",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"amount\":100\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ahmed-samy-flapkap-backend-challenge.onrender.com/deposit",
+							"protocol": "https",
+							"host": [
+								"ahmed-samy-flapkap-backend-challenge",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"deposit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reset Coins",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YmZhOTBkNGEzNzY2OGI3YTYwMDhjNyIsImlhdCI6MTcwNzA2MTk1OCwiZXhwIjoxNzA3MDY1NTU4fQ.zIJDFLL6XJF8drobBZTD89ygbtPmGv6HYHbRbvizH6Q",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"amount\":100\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ahmed-samy-flapkap-backend-challenge.onrender.com/reset",
+							"protocol": "https",
+							"host": [
+								"ahmed-samy-flapkap-backend-challenge",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"reset"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buy Product",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YmZhOTBkNGEzNzY2OGI3YTYwMDhjNyIsImlhdCI6MTcwNzA2MTk1OCwiZXhwIjoxNzA3MDY1NTU4fQ.zIJDFLL6XJF8drobBZTD89ygbtPmGv6HYHbRbvizH6Q",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"productId\": \"65bfb0592d7462e7da00cb0c\", // Replace with actual product ID\r\n  \"amount\": 1\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ahmed-samy-flapkap-backend-challenge.onrender.com/buy",
+							"protocol": "https",
+							"host": [
+								"ahmed-samy-flapkap-backend-challenge",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"buy"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product Request",
+			"item": [
+				{
+					"name": "Add Product",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YmZhOTFhNGEzNzY2OGI3YTYwMDhjYiIsImlhdCI6MTcwNzA2MTAwMSwiZXhwIjoxNzA3MDY0NjAxfQ.MnXVkK2VqFtrzQQTH7JynkSUFlt_MBAexjMDhE0Wxb8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"productName\": \"Energy Drink\",\r\n        \"cost\": 80,\r\n        \"amountAvailable\": 30\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ahmed-samy-flapkap-backend-challenge.onrender.com/products",
+							"protocol": "https",
+							"host": [
+								"ahmed-samy-flapkap-backend-challenge",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Product",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YmZhOTFhNGEzNzY2OGI3YTYwMDhjYiIsImlhdCI6MTcwNzA2MTAwMSwiZXhwIjoxNzA3MDY0NjAxfQ.MnXVkK2VqFtrzQQTH7JynkSUFlt_MBAexjMDhE0Wxb8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n        \"amountAvailable\": 15\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ahmed-samy-flapkap-backend-challenge.onrender.com/products/65bfb0592d7462e7da00cb0c",
+							"protocol": "https",
+							"host": [
+								"ahmed-samy-flapkap-backend-challenge",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"products",
+								"65bfb0592d7462e7da00cb0c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Product",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YmZhOTFhNGEzNzY2OGI3YTYwMDhjYiIsImlhdCI6MTcwNzA2MTAwMSwiZXhwIjoxNzA3MDY0NjAxfQ.MnXVkK2VqFtrzQQTH7JynkSUFlt_MBAexjMDhE0Wxb8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ahmed-samy-flapkap-backend-challenge.onrender.com/products/65bfb0e92d7462e7da00cb27",
+							"protocol": "https",
+							"host": [
+								"ahmed-samy-flapkap-backend-challenge",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"products",
+								"65bfb0e92d7462e7da00cb27"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Products",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ahmed-samy-flapkap-backend-challenge.onrender.com/products",
+							"protocol": "https",
+							"host": [
+								"ahmed-samy-flapkap-backend-challenge",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Product By ID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ahmed-samy-flapkap-backend-challenge.onrender.com/products/65bfb0d82d7462e7da00cb24",
+							"protocol": "https",
+							"host": [
+								"ahmed-samy-flapkap-backend-challenge",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"products",
+								"65bfb0d82d7462e7da00cb24"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,4 @@
+::1 - - [04/Feb/2024:16:46:32 +0000] "POST /users/signin HTTP/1.1" 200 214 "-" "PostmanRuntime/7.36.1"
+::1 - - [04/Feb/2024:16:54:43 +0000] "POST /users HTTP/1.1" 409 38 "-" "PostmanRuntime/7.36.1"
+::1 - - [04/Feb/2024:16:55:05 +0000] "POST /users HTTP/1.1" 201 265 "-" "PostmanRuntime/7.36.1"
+::1 - - [04/Feb/2024:17:19:07 +0000] "POST /users HTTP/1.1" 201 266 "-" "PostmanRuntime/7.36.1"
